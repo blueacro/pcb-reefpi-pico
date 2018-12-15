@@ -1,0 +1,11 @@
+# The following settings should be placed in /boot/config.txt
+# to allow the Reef-Pi Pico Board to work correctly.
+
+dtparam=i2c_arm=on
+dtparam=spi=off
+dtparam=audio=off
+
+dtoverlay=pwm-2chan,pin=18,func=2,pin2=13,func2=4
+dtoverlay=w1-gpio
+dtoverlay=i2c-rtc,pcf8523
+
